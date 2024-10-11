@@ -26,4 +26,17 @@ body {
   float: left
   
 }
-    
+
+#notes{
+    display: block;
+    min-height: 100px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#readBlock{
+    border-radius:10px;
+    margin: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+}
