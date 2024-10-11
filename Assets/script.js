@@ -20,14 +20,6 @@ addNewBook.addEventListener("click", function(){
      return;
   }
 
-  pageGoal = prompt("Please enter the number of pages you want to set as your daily goal:");
-  readPages = prompt("Please enter the number of pages you've read today:");
-  const numNotes = prompt("Enter the number of notes you want to add");
-
-  for (i = 0; i < numNotes; i++){
-    readingNotes[i] = prompt("Enter your note:");
-  }
-
   book = [bookName, bookAuthor, pageCount, pageGoal, readPages, readingNotes];
 
   bookShelf.push(book);
