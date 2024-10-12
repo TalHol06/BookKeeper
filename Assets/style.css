@@ -31,20 +31,27 @@ nav {
     background-color: lightgray;
 }
 
+    
 aside {
     float: right ;
-    flex: 30%;
+    height: 800px ;
     padding: 20px;
-    background-color: whitesmoke
+    background-color: whitesmoke;
 }
 
-main{
-    flex:70%;
-    background-color: #D8e0f2 ;
+section {
+background-color: #b2c0d6;
+height: 800px
 } 
 
 #txtbox {
     font-size: 18pt;
     height: 42px;
-    width: 150px
+    width: 100px
+}
+
+#notes {
+    font-size: 20pt;
+    height: 100 px;
+    width: 80 px;
 }
