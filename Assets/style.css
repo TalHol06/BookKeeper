@@ -36,12 +36,15 @@ aside {
     flex: 30%;
     padding: 20px;
     background-color: whitesmoke
-
 }
 
 main{
     flex:70%;
     background-color: #D8e0f2 ;
-
-
 } 
+
+#txtbox {
+    font-size: 18pt;
+    height: 42px;
+    width: 150px
+}
