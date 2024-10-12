@@ -32,9 +32,10 @@ nav {
 }
 
 aside {
-    display: flex;
-    background-color: whitesmoke;
-    float: right;
+    float: right ;
+    flex: 30%;
+    padding: 20px;
+    background-color: whitesmoke
 
 }
 
