@@ -24,6 +24,16 @@ addNewBook.addEventListener("click", function(){
 
   bookShelf.push(book);
   return(bookShelf);
+});
+const readPagesInput = function(){
+  let x = document.getElementById("pages").value;
+  if (isNaN(parseInt(x))==true){
+    document.getElementById("pages").value = "#naN";
+  } else {
+    readPages = document.getElementById("pages").value;
+    book[4] = readPages;
+    document.getElementById("pages").value = " ";
+  }
 }
 const addReadingNotes = function () {
     readingNotes.push(document.getElementById("notes").value);
