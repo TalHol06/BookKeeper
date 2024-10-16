@@ -27,9 +27,13 @@
         <h1>BookKeeper</h1>
     </header>
     <nav>
-      <h2>Book Name <br> Author</h2>
-      <h2 style="color:black; text-align: center;">Page Count:</h2>
-      <h2 style="color:black; text-align: right;"> Page Goal:</h2>
+      <div class="subtitles">
+        <h3>Book Name</h3>
+        <h3>Author</h3>
+        <h3>Page Count</h3>
+        <h3>Page Goal</h3>
+      </div>
+
      </nav>
    <main>
     <aside>
@@ -43,7 +47,9 @@
         <input type="text" name="Read Pages">
         <button type="submit">Submit</button>
       </form>
-       Add Reading Notes: <br>
+
+       <br> Add Reading Notes: <br>
+
        <form action="" method="">
         <input type="text" name="Add Reading Notes">
         <button type="submit">Submit</button>
@@ -52,18 +58,22 @@
    <section>
     <h3>Reading Notes<br> 
       <div id="container"></div>
-      
-   </section>   
+   </section> 
+   
+   <br>
+
+   <div class = "status">
+    <label for="Book Status">Book Status:</label>
+    <select name="Book Status" id="Book Status" class = content>
+      <option diabled value=""></option>
+      <option value = "Completed"> Completed</option>
+      <option value = "In Progress">In Progress</option>
+      <option value = "Pending">Pending</option>
+    </select>
+  </div>
+
     </main>
    <footer>
-
-   </footer>
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./Assets/script.js"></script>
