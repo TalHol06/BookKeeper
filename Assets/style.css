@@ -20,6 +20,18 @@ body {
     border: 15px gray;
     padding: 50px;
     margin: 0px;
+    text-align: center;
+    display: inline-block;
+}
+
+.subtitles {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+h3 {
+    margin: 0;
 }
 
 .header button {
@@ -28,7 +40,7 @@ body {
 }
 
 #notes{
-    display: block;
+    display: inline-block;
     min-height: 100px;
     width: 100%;
     margin-top: 10px;
@@ -40,3 +52,16 @@ body {
     padding: 10px;
     word-wrap: break-word;
 }
+
+.status {
+    position: relative;
+    display: inline-block;
+}
+
+.content {
+    position: absolute;
+    min-width: 160px;
+    padding: 8px 12px;
+    height: 40px;
+}
+
