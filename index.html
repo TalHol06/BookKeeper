@@ -27,9 +27,12 @@
         <h1>BookKeeper</h1>
     </header>
     <nav>
-      <h2>Book Name <br> Author</h2>
-      <h2 style="color:black; text-align: center;">Page Count:</h2><p id="page count"></p>
-      <h2 style="color:black; text-align: right;"> Page Goal:</h2><p id="read pages"><p id="page goal"></p>
+      <div class="subtitles">
+        <h3>Book Name</h3>
+        <h3>Author</h3>
+        <h3>Page Count</h3>
+        <h3>Page Goal</h3>
+      </div>
      </nav>
    <main>
     <aside>
@@ -43,22 +46,33 @@
         <input type="text" name="Read Pages">
         <button type="submit">Submit</button>
       </form>
-       Add Reading Notes: <br>
+       <br> Add Reading Notes: <br>
        <form action="" method="">
-        <textarea type="text" name="Add Reading Notes">
+        <input type="text" name="Add Reading Notes">
         <button type="submit">Submit</button>
       </form> 
    </aside>
    <section>
     <h3>Reading Notes<br> 
       <div id="container"></div>
-      
-   </section>   
+   </section> 
+   
+   <br>
+
+   <div class = "status">
+    <label for="Book Status">Book Status:</label>
+    <select name="Book Status" id="Book Status" class = content>
+      <option diabled value=""></option>
+      <option value = "Completed"> Completed</option>
+      <option value = "In Progress">In Progress</option>
+      <option value = "Pending">Pending</option>
+    </select>
+  </div>
+  
     </main>
    <footer>
 
    </footer>
-
 
 
 
