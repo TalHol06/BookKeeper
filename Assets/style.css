@@ -26,8 +26,8 @@ body {
 }
 
 nav {
-    display: flex;
-    padding: 70px 40px;
+    display: block;
+    padding: 10px 40px;
     background-color: lightgray;
 }
 
@@ -35,18 +35,28 @@ nav {
 aside {
     float: right ;
     height: 800px ;
+    width: 30%;
     padding: 20px;
     background-color: whitesmoke;
 }
 
 section {
 background-color: #b2c0d6;
-height: 800px
+height: 800px ;
+width: 70% ;
+display: inline-block
 } 
 
 #txtbox {
     font-size: 18pt;
     height: 42px;
     width: 100px
+}
+
+#readBlock {
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: white;
 }
 
