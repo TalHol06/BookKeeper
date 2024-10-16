@@ -40,3 +40,8 @@ body {
     padding: 10px;
     word-wrap: break-word;
 }
+
+.input-container{
+    float: right;
+    visibility: hidden;
+}

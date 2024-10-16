@@ -9,22 +9,26 @@ let bookShelf = [];
 
 
 const addNewBook = document.getElementById('add-book-button');
+const element = document.getElementById('inputs');
 
 addNewBook.addEventListener("click", function(){
-  let j = 0;
-  bookName = prompt("Please enter book title:");
-  bookAuthor = prompt("Please enter the book's author:");
-  pageCount = prompt("Please enter the number of pages:");
+  element.style.visibility = 'visible';
+});
 
-   if (!(pageCount > 0)){
-     return;
+function storeBookInfo(){
+  bookName = document.getElementById('bName').value;
+  bookAuthor = document.getElementById('bAuthor').value;
+  pageCount = Number(document.getElementById('pgCount').value);
+
+  if (pageCount <= 0){
+    return;
   }
 
   book = [bookName, bookAuthor, pageCount, pageGoal, readPages, readingNotes];
-
   bookShelf.push(book);
-  return(bookShelf);
-});
+  return bookShelf;
+};
+
 const readPagesInput = function(){
   let x = document.getElementById("pages").value;
   if (isNaN(parseInt(x))==true){
