@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+   
 }
 
 body {
@@ -9,14 +8,13 @@ body {
 }
 
 .header {
-    padding: 0px;
-    background-color:lightgray
+    padding: -10px;
+    background-color:gray
 }
-
 
 .header {
     width: 1920px;
-    height: 0px;
+    height: 10px;
     border: 15px gray;
     padding: 50px;
     margin: 0px;
@@ -38,7 +36,34 @@ h3 {
   float: left
   
 }
+    
+nav {
+    display: block;
+    padding: 10px 40px;
+    background-color: lightgray;
+}
 
+    
+aside {
+    float: right ;
+    height: 800px ;
+    width: 30%;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+section {
+background-color: #b2c0d6;
+height: 800px ;
+width: 70% ;
+display: inline-block
+} 
+
+#txtbox {
+    font-size: 18pt;
+    height: 42px;
+    width: 100px
+}
 #notes{
     display: inline-block;
     min-height: 100px;
