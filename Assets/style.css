@@ -103,13 +103,13 @@ display: block
 #txtbox {
     font-size: 18pt;
     height: 42px;
-    width: 100px
+    width: 100px;
 }
 
 textarea{
     width: 376px;
+    border-radius: 5px;
 }
-
 
 #notes{
     display: inline-block;
