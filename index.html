@@ -11,10 +11,12 @@
 
   <body>
     <header class="header">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Book list</button> 
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="bi bi-list"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg></i></button> 
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Your list of books</h5>
+                <pre><h5 class="offcanvas-title" id="offcanvasScrollingLabel">Your list of books           <hr></h5></pre>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
@@ -28,35 +30,36 @@
     </header>
     <nav>
       <div class="subtitles">
-        <h2 id="">Book Name</h2>
-        <h4 id="">Author</h4>
-        <h3>Page Count<p id="page count"></p></h3>
-        <h3>Page Goal<p id="read pages"><p id="page goal"></p></h3>
+        <h2 id="bn">Book Name:</h2>
+        <h4 id="at">Author:</h4>
+        <div class="books">
+          <h3>Page<br> Count:<p id="page count"></p></h3>
+          <h3>Page<br>Goal:<p id="read pages"><p id="page goal"></p></h3>
+        </div>
       </div>
 
      </nav>
    <main>
     <aside>
     <h2>Set Current Goal: <br>
-      <form action="" method="">
        <input type="text" id="">
         <button onclick="">Submit</button>
       </form>
-      <br> Read Pages: <br> 
-      <form action="" method="">
+    </h2>
+     <h2><br> Read Pages: <br> 
         <input type="text" id="">
         <button onclick="">Submit</button>
       </form>
-
+     </h2>
+      <h2>
        <br> Add Reading Notes: <br>
-
-       <form action="" method="">
-        <textarea type="text" id=""></textarea>
+        <textarea type="textbox" id=""></textarea>
         <button onclick="">Submit</button>
-      </form> 
+      </form>
+      </h2> 
    </aside>
    <section>
-    <h3>Reading Notes<br> 
+    <h3>&nbsp;&nbsp;&nbsp;Reading Notes:<br> 
       <div id="container"></div>
    </section> 
    
