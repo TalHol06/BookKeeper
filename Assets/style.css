@@ -76,6 +76,11 @@ aside {
     background-color: whitesmoke;
 }
 
+
+aside button {
+    float: right;
+}
+
 section {
 background-color: #b2c0d6;
 height: 800px ;
@@ -92,6 +97,7 @@ display: inline-block
 textarea{
     width: 376px;
 }
+
 
 #notes{
     display: inline-block;
