@@ -87,10 +87,15 @@ aside button {
 
 section {
 background-color: #b2c0d6;
-height: 800px ;
-width: 70% ;
-display: inline-block
+height: 800px;
+width: 1290px;
+margin-top: 20px;
+margin-left: 20px;
+margin-bottom: px;
+margin-right: 20px;
+display: block
 } 
+
 
 #txtbox {
     font-size: 18pt;
