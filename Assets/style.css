@@ -14,11 +14,11 @@ body {
 
 .header {
     width: 1920px;
-    height: 0px;
-    border: 15px gray;
-    padding: 50px;
+    height: 90px;
+    border: 0px gray;
+    padding: 30px;
     margin: 0px;
-    text-align: center;
+    text-align: left;
     display: inline-block;
 }
 
