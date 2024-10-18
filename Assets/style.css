@@ -88,6 +88,11 @@ display: inline-block
     height: 42px;
     width: 100px
 }
+
+textarea{
+    width: 376px;
+}
+
 #notes{
     display: inline-block;
     min-height: 100px;
