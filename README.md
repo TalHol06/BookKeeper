@@ -2,12 +2,12 @@
 
 ## User Story
 As a reader,
-I want a simple site,
-So that I can track my reading goals.
+I want to track my reading goals,
+So that I can view my daily habits of reading and review information.
 ## Acceptance Criteria
-Given I need to set a reading goal for the week.
-When I input a goal for each day of the week.
-Then I see the set reminder for that week displayed within a weekly calendar.
+GIVEN, I need to set a reading goal for the day.
+WHEN, I input information into the respective boxes.
+THEN, I see the information displayed within the website.
 
 ## Description
 BookKeeper is a web application that can help users log books they want to read in the future, keep track of their completed/current books, and set/maintain reading goals.
