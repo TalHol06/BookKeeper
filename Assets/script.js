@@ -43,15 +43,11 @@ const addReadingNotes = function () {
 
 }
 const currentGoal = function() {
-  let x = document.getElementById("numberInput").value; 
     let numberInput = document.getElementById('numberInput').value;
-    console.log("Input value", numberInput);
     let messageElement = document.getElementById('message');
     if (!isNaN(numberInput) && numberInput.trim() !=='') {
         localStorage.setItem('currentGoal', numberInput);
-        console.log("Stored in local storage", numberInput);
     } else {
         messageElement.textContent = "#naN";
-        console.log("Invalid input")
     }
   };
