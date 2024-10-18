@@ -14,7 +14,7 @@ body {
 
 .header {
     width: 1920px;
-    height: 10px;
+    height: 0px;
     border: 15px gray;
     padding: 50px;
     margin: 0px;
@@ -23,14 +23,18 @@ body {
 }
 
 .subtitles {
-    display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
 }
 
-h3 {
-    margin: 0;
+.books {
+    display: block;
+    position: relative;
+    left: 40%;
+    bottom: 115px;
+    
 }
+
 
 .header button {
   float: left
@@ -39,11 +43,31 @@ h3 {
     
 nav {
     display: block;
-    padding: 10px 40px;
+    padding: 0px;
     background-color: lightgray;
+    height: 200px
 }
 
-    
+nav h2{
+    font-size: 60px;
+
+}
+
+nav h3{
+    display: inline-block;
+    padding: 00px;
+    margin-right: 400px;
+    font-size: 50px;
+
+}
+nav h4{
+    display: inline-block;
+    padding: 00px;
+    font-size:30px;
+
+}
+
+
 aside {
     float: right ;
     height: 800px ;
