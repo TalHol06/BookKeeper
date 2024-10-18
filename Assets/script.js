@@ -49,11 +49,10 @@ const currentGoal = function() {
     console.log("Input value", numberInput);
     let messageElement = document.getElementById('message');
     if (!isNaN(numberInput) && numberInput.trim() !=='') {
-        messageElement.textContent = numberInput;
         localStorage.setItem('currentGoal', numberInput);
         console.log("Stored in local storage", numberInput);
     } else {
-        messageElement.textContent = "Not a number";
+        messageElement.textContent = "#naN";
         console.log("Invalid input")
     }
   };
