@@ -11,12 +11,11 @@ let bookShelf = [];
 const addNewBook = document.getElementById('add-book-button');
 
 addNewBook.addEventListener("click", function(){
-  let j = 0;
-  bookName = prompt("Please enter book title:");
-  bookAuthor = prompt("Please enter the book's author:");
-  pageCount = prompt("Please enter the number of pages:");
+  bookName = document.getElementById('bName').value;
+  bookAuthor = document.getElementById('bAuthor').value;
+  pageCount = Number(document.getElementById('pgCount').value);
 
-   if (!(pageCount > 0)){
+   if (pageCount <= 0){
      return;
   }
 
@@ -43,4 +42,10 @@ const addReadingNotes = function () {
     newDiv.setAttribute("id","readBlock");
 
 }
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+});
 
