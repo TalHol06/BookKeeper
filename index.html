@@ -2,98 +2,125 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1">
     <title>BookKeeper</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Assets/style.css">
-
- </head>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" 
+          href="./Assets/style.css">
+  </head>
   <body>
+    <section id="newBookForm">
+      <div id = "fullShadow"></div>
+      <div id = "bookBox">
+        <h2>Book Name:</h2>
+        <input id="bName">
+        <h2>Author:</h2>
+        <input id="bAuthor">
+        <h2>Page Count:</h2>
+        <input id="pgCount">
+        <button id="add-book-button">Submit</button>
+      </div>
+    </section>
     <header class="header">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="bi bi-list"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-            </svg></i></button> 
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-              <div class="offcanvas-header">
-                <pre><h5 class="offcanvas-title" id="offcanvasScrollingLabel">Your list of books           <hr></h5></pre>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                <div class = "status">
-                  <label for="Book Status">Book Status:</label>
-                  <select name="Book Status" id="Book Status" class = content>
-                    <option diabled value=""></option>
-                    <option value = "Completed"> Completed</option>
-                    <option value = "In Progress">In Progress</option>
-                    <option value = "Pending">Pending</option>
-                  </select>
-                </div>
-              </div>
-              <div class="offcanvas-body">
-                <p></p>
-              </div>
-            </div>
-            
-            <button class="btn btn-primary" id="add-book-button" style="float: right">Add new book</button>
-        <h1>BookKeeper</h1>
-    </header>
-    <nav>
-      <div class="subtitles">
-        <h2 id="bn">Book Name:</h2>
-        <h4 id="at">Author:</h4>
-        <div class="books">
-          <h3>Page<br> Count:<p id="page count"></p></h3>
-          <h3>Page<br>Goal:<p id="read pages"><p id="page goal"></p></h3>
+      <button class="btn btn-primary" 
+              type="button" 
+              data-bs-toggle="offcanvas" 
+              data-bs-target="#offcanvasScrolling" 
+              aria-controls="offcanvasScrolling">
+        <i class="bi bi-list">
+          <svg  xmlns="http://www.w3.org/2000/svg" 
+                width="16" 
+                height="16" 
+                fill="currentColor" 
+                class="bi bi-list" 
+                viewBox="0 0 16 16">
+            <path fill-rule="evenodd" 
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </i>
+      </button>
+      <div  class="offcanvas offcanvas-start" 
+            data-bs-scroll="true" 
+            data-bs-backdrop="false" 
+            tabindex="-1" 
+            id="offcanvasScrolling" 
+            aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <pre>
+            <h5 class="offcanvas-title" 
+                id="offcanvasScrollingLabel">Your list of books           <hr></h5>
+                <div id="bookContainer"></div>
+          </pre>
+          <button type="button" 
+                  class="btn-close" 
+                  data-bs-dismiss="offcanvas" 
+                  aria-label="Close">
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <p></p>
         </div>
       </div>
-
-     </nav>
-   <main>
+    <button class="btn btn-primary set-btn" 
+            onclick="newBookTab()"
+            style="float: right">Add new book</button>
+    <h1>BookKeeper</h1>
+  </header>
+  <nav>
+    <div class="subtitles">
+      <h2 id="currentName">Book Name</h2>
+      <h4 id="currentAuthor">Author Name</h4>
+      <div class="books">
+        <h3>Page<br>Count:</h3>
+          <div class="valueContainer">
+            <p id="currentPageCount">0</p>
+          </div>
+        <h3>Page<br>Goal:</h3>
+          <div class ="valueContainer">
+            <p id="currentReadPages">0</p>
+            <p>/</p>
+            <p id="currentPageGoal">0</p>
+          </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    
+    <section>
+      <h3><strong>Reading Notes:</strong><br> 
+      <div id="container">
+      </div>
+    </section> 
     <aside>
-    <h2>Set Current Goal: <br>
-       <input type="text" id="">
-        <button onclick="">Submit</button>
-    </h2>
-     <h2><br> Read Pages: <br> 
-        <input type="text" id="">
-        <button onclick="">Submit</button>
-      </form>
-     </h2>
-      <h2>
-       <br> Add Reading Notes: <br>
-        <textarea type="textbox" id=""></textarea>
-        <button onclick="">Submit</button>
-      </form>
+      <h2>Set Current Goal: <br>
+        <input  type="text" 
+                id="numberGoal">
+        <button onclick="currentGoal()">Submit</button>
+      </h2>
+      <br>
+      <h2> Read Pages: <br> 
+        <input  type="text" 
+                id="pages">
+        <button onclick="readPagesInput()">Submit</button>
+        <button id="resetButton" onclick="readPagesReset()">Reset</button>
+      </h2>
+      <br>
+      <br>
+      <h2>Add Reading Notes: <br>
+        <textarea type="textbox" 
+                  id="notes"></textarea>
+        <button onclick="addReadingNotes()">Submit</button>
       </h2> 
-   </aside>
-   <section>
-    <h3>&nbsp;&nbsp;&nbsp;Reading Notes:<br> 
-      <div id="container"></div>
-   </section> 
-   
-   <br>
-
-   <div class = "status">
-    <label for="Book Status">Book Status:</label>
-    <select name="Book Status" id="Book Status" class = content>
-      <option diabled value=""></option>
-      <option value = "Completed"> Completed</option>
-      <option value = "In Progress">In Progress</option>
-      <option value = "Pending">Pending</option>
-    </select>
-  </div>
-
-  
-    </main>
-   <footer>
-
-   </footer>
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./Assets/script.js"></script>
+    </aside>
+  </main>
+  <footer>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+          crossorigin="anonymous"></script>
+  <script src="./Assets/script.js"></script>
   </body>
 </html>
