@@ -182,8 +182,9 @@ textarea{
     left:75%;
 }
 .btn-close{
-    position:relative;
-    bottom:120px;
+    position:absoluete;
+    top:65px;
+    left:80%;
 }
 .active-check{
     margin:5px;
