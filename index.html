@@ -18,6 +18,15 @@
               <div class="offcanvas-header">
                 <pre><h5 class="offcanvas-title" id="offcanvasScrollingLabel">Your list of books           <hr></h5></pre>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class = "status">
+                  <label for="Book Status">Book Status:</label>
+                  <select name="Book Status" id="Book Status" class = content>
+                    <option diabled value=""></option>
+                    <option value = "Completed"> Completed</option>
+                    <option value = "In Progress">In Progress</option>
+                    <option value = "Pending">Pending</option>
+                  </select>
+                </div>
               </div>
               <div class="offcanvas-body">
                 <p></p>
@@ -43,7 +52,6 @@
     <h2>Set Current Goal: <br>
        <input type="text" id="">
         <button onclick="">Submit</button>
-      </form>
     </h2>
      <h2><br> Read Pages: <br> 
         <input type="text" id="">
