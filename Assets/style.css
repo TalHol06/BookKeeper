@@ -4,100 +4,133 @@
 }
 
 body {
-    background-color:#d5d9db
-}
-
-main {
     background-color:#d5d9db;
 }
-
-.header {
-    padding: -10px;
-    background-color:#353839;
+main{
+    background-color: #d5d9db;
 }
 
-.header {
+header {
+    background-color: #353839;
     width: 100%;
     height: 74px;
-    border: 0px #353839;
-    padding: 30px;
-    margin: 0px;
+    border: 0px gray;
+    padding: 15px;
+    padding-top:0;
     text-align: left;
     display: inline-block;
 }
 
 header h1{
-    font-size: xx-large;
-    color: #8f8f8f
+
+    font-size: 40px;
+    display:inline-block;
+    position:relative;
+    top:10px;
+    margin-left:3%;
+    color:#bbbbbb;
+}
+
+header button {
+  background-color:grey;
+  border:none;
+  position:relative;
+}
+
+.set-btn{
+    position:relative;
+    top:15px;
 }
 
 .subtitles {
     justify-content: space-between;
-    padding: 30px;
+    padding:1%;
 }
 
 .books {
-    display: block;
-    position: relative;
-    left: 40%;
-    bottom: 115px;
+    display: inline;
+    position: absolute;
+    left: 45%;
+    top: 120px;
+    width:55%;
     
 }
-
-
-.header button {
-  float: left;
-  background-color: gray;
-  border-color: gray;
   
-}
-    
 nav {
     display: block;
     padding: 0px;
-    border-radius: 20px;
     background-color: #789bb3;
     border-color: #d5d9db;
-    height: 200px
+    height: 200px;
+    border-radius:25px;
+    margin-bottom:1%;
 }
 
 nav h2{
-    font-size: 60px;
-    color:#383838
-
+    font-size: 55px;
+    flex-wrap:wrap;
+    width:45%;
+    color:#383838;
+}
+nav h4{
+    display: block;
+    padding: 00px;
+    font-size:25px;
+    width:45%;
+    color:#383838;
 }
 
 nav h3{
     display: inline-block;
     padding: 00px;
-    margin-right: 400px;
     font-size: 50px;
-    color:#383838;
 
 }
-nav h4{
-    display: inline-block;
-    padding: 00px;
-    font-size:30px;
+.valueContainer {
+    margin-left:1%;
+    display:inline;
+    font-size:100px;
+    width: 28%;
+}
+.valueContainer p{
+    display:inline-block;
+    text-align:center;
+}
+#currentPageCount{
+    width:16%;
+}
+#currentReadPages{
+    width:16%;
+}
+#currentPageGoal{
+    width:16%
+}
+main{
+    display:flex;
+}
+section {
+    background-color: #ab8f76;
+    width: 70%;
+    padding:1%;
+    display: block;
+    border-radius:25px;
+} 
+section h3{
     color:#383838;
 }
-
-
 aside {
-    float: right ;
-    height: 800px ;
-    width: 30%;
-    border-radius: 20px;
+    float: right;
+    width: 29%;
+    margin-left:1%;
     padding: 20px;
     background-color: #7E8C54;
+    border-radius:25px;
 }
-
-
-aside button {
-    float: right;
+aside input{
+    margin-top:2%;
+    width: 70%;
 }
-
-aside h2 {
+aside h2{
     color:#383838;
 }
 
@@ -115,18 +148,27 @@ section {
 } 
 
 section h3 {
-    color:#383838
+    color:#383838;
 }
-
+aside button {
+    margin-top:2%;
+    float: right;
+    width:20%;
+    border-radius:10px;
+    font-size:20px;
+}
+#resetButton{
+    margin-top:0px;
+}
 #txtbox {
     font-size: 18pt;
     height: 42px;
-    width: 100px;
+    width: 100px
 }
 
 textarea{
-    width: 376px;
-    border-radius: 5px;
+    margin-top:2%;
+    width: 70%;
 }
 
 #notes{
@@ -136,21 +178,76 @@ textarea{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 #readBlock{
     border-radius:10px;
     margin: 10px;
     padding: 10px;
     word-wrap: break-word;
+    background-color:#d5d9db;
 }
 
 .status {
     position: relative;
-    display: inline-block;
+    display:block;
+    visibility:hidden;
 }
 
 .content {
-    position: absolute;
-    min-width: 160px;
-    padding: 8px 12px;
-    height: 40px;
+    position: relative;
+    bottom:25px;
+    left:75%;
+}
+.btn-close{
+    position:relative;
+    bottom:120px;
+}
+.active-check{
+    margin:5px;
+    flex-wrap:wrap;
+}
+.active-check:hover{
+    text-decoration: underline;
+}
+#newBookForm{
+    z-index: 9;
+    visibility: hidden;
+    width:100%;
+    padding:0;
+}
+
+#fullShadow{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:50%;
+}
+#bookBox{
+    z-index: 9;
+    border-radius:10px;
+    padding:1%;
+    left:30%;
+    top:20%;
+    width:40%;
+    height:40%;
+    background-color: #d5d9db;
+    color:#383838;
+    position:absolute;
+}
+
+#bookBox h2{
+    font-size:35px;
+    margin-top:1%;
+}
+#bookBox input{
+    font-size:20px;
+}
+#bookBox button{
+    position:relative;
+    left:40%;
+    top:15%;
+    width:20%;
+    border-radius:15px;
+    font-size:30px;
 }
