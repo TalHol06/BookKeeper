@@ -4,18 +4,22 @@
 }
 
 body {
-    background-color:white
+    background-color:#d5d9db
+}
+
+main {
+    background-color:#d5d9db;
 }
 
 .header {
     padding: -10px;
-    background-color:gray
+    background-color:#353839;
 }
 
 .header {
     width: 100%;
     height: 74px;
-    border: 0px gray;
+    border: 0px #353839;
     padding: 30px;
     margin: 0px;
     text-align: left;
@@ -24,6 +28,7 @@ body {
 
 header h1{
     font-size: xx-large;
+    color: #8f8f8f
 }
 
 .subtitles {
@@ -41,7 +46,9 @@ header h1{
 
 
 .header button {
-  float: left
+  float: left;
+  background-color: gray;
+  border-color: gray;
   
 }
     
@@ -49,12 +56,14 @@ nav {
     display: block;
     padding: 0px;
     border-radius: 20px;
-    background-color: lightgray;
+    background-color: #789bb3;
+    border-color: #d5d9db;
     height: 200px
 }
 
 nav h2{
     font-size: 60px;
+    color:#383838
 
 }
 
@@ -63,13 +72,14 @@ nav h3{
     padding: 00px;
     margin-right: 400px;
     font-size: 50px;
+    color:#383838;
 
 }
 nav h4{
     display: inline-block;
     padding: 00px;
     font-size:30px;
-
+    color:#383838;
 }
 
 
@@ -79,7 +89,7 @@ aside {
     width: 30%;
     border-radius: 20px;
     padding: 20px;
-    background-color: whitesmoke;
+    background-color: #7E8C54;
 }
 
 
@@ -87,9 +97,12 @@ aside button {
     float: right;
 }
 
+aside h2 {
+    color:#383838;
+}
+
 section {
-<<<<<<< HEAD
-    background-color: #b2c0d6;
+background-color: #ab8f76;
     height: 800px;
     width: 1290px;
     border-radius: 20px;
@@ -98,30 +111,21 @@ section {
     margin-bottom: px;
     margin-right: 20px;
     display: block
-=======
-background-color: #b2c0d6;
-height: 800px;
-width: 1290px;
-border-radius: 20px;
-margin-top: 20px;
-margin-left: 20px;
-margin-bottom: px;
-margin-right: 20px;
-display: block
->>>>>>> 385c63e6d5eb2aca6d4222bef5a350abe7e0554a
-} 
 
+section h3 {
+    color:#383838
+}
 
 #txtbox {
     font-size: 18pt;
     height: 42px;
-    width: 100px
+    width: 100px;
 }
 
 textarea{
     width: 376px;
+    border-radius: 5px;
 }
-
 
 #notes{
     display: inline-block;
