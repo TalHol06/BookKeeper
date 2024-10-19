@@ -103,15 +103,14 @@ aside h2 {
 
 section {
 background-color: #ab8f76;
-height: 800px;
-width: 1290px;
-border-radius: 20px;
-margin-top: 20px;
-margin-left: 20px;
-margin-bottom: px;
-margin-right: 20px;
-display: block
-} 
+    height: 800px;
+    width: 1290px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: px;
+    margin-right: 20px;
+    display: block
 
 section h3 {
     color:#383838
@@ -153,4 +152,3 @@ textarea{
     padding: 8px 12px;
     height: 40px;
 }
-

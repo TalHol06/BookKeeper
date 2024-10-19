@@ -42,10 +42,12 @@ const addReadingNotes = function () {
     newDiv.setAttribute("id","readBlock");
 
 }
-
-const form = document.querySelector('form');
-
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-});
-
+const currentGoal = function() {
+    let numberInput = document.getElementById('numberInput').value;
+    let messageElement = document.getElementById('message');
+    if (!isNaN(numberInput) && numberInput.trim() !=='') {
+        localStorage.setItem('currentGoal', numberInput);
+    } else {
+        messageElement.textContent = "#naN";
+    }
+  };
