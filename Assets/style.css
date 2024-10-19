@@ -4,18 +4,22 @@
 }
 
 body {
-    background-color:white
+    background-color:#d5d9db
+}
+
+main {
+    background-color:#d5d9db;
 }
 
 .header {
     padding: -10px;
-    background-color:gray
+    background-color:#353839;
 }
 
 .header {
     width: 100%;
     height: 74px;
-    border: 0px gray;
+    border: 0px #353839;
     padding: 30px;
     margin: 0px;
     text-align: left;
@@ -24,6 +28,7 @@ body {
 
 header h1{
     font-size: xx-large;
+    color: #8f8f8f
 }
 
 .subtitles {
@@ -49,7 +54,8 @@ nav {
     display: block;
     padding: 0px;
     border-radius: 20px;
-    background-color: lightgray;
+    background-color: #789bb3;
+    border-color: #d5d9db;
     height: 200px
 }
 
@@ -79,7 +85,7 @@ aside {
     width: 30%;
     border-radius: 20px;
     padding: 20px;
-    background-color: whitesmoke;
+    background-color: #7E8C54;
 }
 
 
@@ -88,7 +94,7 @@ aside button {
 }
 
 section {
-background-color: #b2c0d6;
+background-color: #ab8f76;
 height: 800px;
 width: 1290px;
 border-radius: 20px;
